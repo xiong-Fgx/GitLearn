@@ -156,5 +156,6 @@
     
 - 将连续的几个commit合并为同一个
     ```
-    git rebase -i 
+    git rebase -i <需要合并的最老的commit的父亲commit号>
+    //在里面将前后中间的pick全部用s替换，然后保存退出，此时弹出另一个交互界面，在这个界面里填写新的commit内容。
     ```
