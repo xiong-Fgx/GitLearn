@@ -174,3 +174,9 @@
     //如果只想比对其中一个文件的差别，就需要
     git diff -- readme.md
     ```
+
+- 让暂存区恢复成和HEAD一样的状态
+    ```
+    git reset HEAD <file>
+    //如果全部恢复则不需要加<file>
+    ```
