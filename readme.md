@@ -188,3 +188,16 @@
     ```
     git reset HEAD -- <file>
     ```
+- 比较两个分支的某个文件的差异
+    ```
+    git diff <branch1/commit1> <branch2/commit2> -- <filename>
+    ```
+
+## 10. stash命令
+- 用stash命令可以将工作区暂存区恢复到原始状态，然后可以重新操作
+- 当需要恢复的时候，执行git stash pop就可以把状态恢复到没有执行stash时候的情况。
+- 查看stash的状态，用git stash list
+
+## 11. 忽略某些文件
+- 在目录下面创建一个.gitignore文件，将不想要git管理的文件放在这个文件中
+- 特别地，**如果填写的是文件夹名加上/的话，则表示该文件夹下的文件不受管控，但是该文件夹受到git的管理。**
