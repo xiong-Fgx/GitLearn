@@ -24,11 +24,16 @@
     xiong@xiong-TM1703:~/GitLearn$ git remote -v
     github_learning	git@github.com:xiong-Fgx/GitLearn.git (fetch)
     github_learning	git@github.com:xiong-Fgx/GitLearn.git (push)
-
-    ```
+```
 
 ## 3. fetch命令
-- 从远端将文件拉取到本地
+- 从远端将文件拉取到本地，使用git fetch + git merge将远端的内容拉取下来并与本地文件内容合并
+- 也可以使用git pull直接拉取，不过这是一种不太安全的方式，尽量还是使用git fetch + git merge
 
 ## 4. push命令
-- 将本地修改提交到远端
+- 将本地修改提交到远端 
+
+  ```
+  git push github_learning master
+  //其中的第一个参数就是当初使用git remote时为该项目设置的名称，master表示分支的名称，可以改成其他的。
+  ```
